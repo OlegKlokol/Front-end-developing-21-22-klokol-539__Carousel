@@ -207,7 +207,7 @@ li {
 }
 
 .second_section {
-  padding: 40px 0px;
+  padding: 40px 0;
 }
 .second_section .text5 {
   position: relative;
@@ -281,7 +281,7 @@ li {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 40px 0px;
+  padding: 40px 0;
 }
 .third_section .banner_last {
   display: -webkit-box;
