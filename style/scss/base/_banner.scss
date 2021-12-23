@@ -1,0 +1,229 @@
+.banner-wrapper {
+  margin: 40px 0;
+
+  .banner {
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+
+    .row-item {
+      width: 48%;
+
+      &.image {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &.content {
+        @include flexbox;
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+
+        .content-wrapper,
+        .block-wrapper {
+          width: 100%;
+        }
+
+        .content-wrapper {
+          .button {
+            padding: 20px 0;
+
+            .banner-button {
+              padding: 15px 25px;
+              border: 2px solid $light-red;
+              background: $light-red;
+              color: $white;
+              text-decoration: none;
+              text-transform: uppercase;
+              @include border-radius(5px);
+
+              &:hover,
+              &:focus {
+                background: $white;
+                color: $light-red;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        .block-wrapper {
+          @include flexbox;
+          @include flex-direction(row);
+          @include flex-wrap(wrap);
+          @include justify-content(space-between);
+
+          .block-item {
+            width: 48%;
+
+            &.blue {
+              .num {
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.second_section{
+  padding: 40px 0px;
+  .text5{
+    position: relative;
+    width: 1180px;
+    height: 96px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .blockl{
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap();
+    @include justify-content(space-between);
+    width: 1180px;
+    height: 265px;
+
+    .blockl1{
+      outline-color: #E2EAF2;
+      outline-style: solid;
+      outline-width: 2px;
+      width: 380px;
+    }
+    .numers{
+      position: relative;
+      color: #f09433;
+      top: 103px;
+      left:39px;
+      font-size:60px ;
+    }
+    .text6{
+      position: relative;
+      top:59px;
+      left:39px;
+      font-size:20px;
+    }
+  }
+}
+.third_section{
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  padding: 40px 0px;
+  .banner_last {
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+
+    .text7 {
+      @include flexbox;
+      @include flex-direction(column);
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+      width: 580px;
+
+      .Subtitile {
+        font-size: 11px;
+        background: aliceblue;
+        width: 63px;
+        height: 17px;
+        text-align: center;
+      }
+
+      .Subtitile2 {
+        font-size: 48px;
+      }
+
+      .Subtitile3 {
+        font-size: 21px;
+      }
+
+      .button {
+        width: 231px;
+        height: 88px;
+        padding: 15px 25px;
+        border: 2px solid #2075F0;
+        background: #2075F0;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include border-radius(5px);
+
+        &:hover,
+        &:focus {
+          background: $white;
+          color: $black;
+          text-decoration: none;
+        }
+      }
+    }
+    }
+    .buttonn{
+      @include flexbox;
+      @include flex-direction(row);
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+      width: 450px;
+      height: 88px;
+
+      .text_button{
+        width: 210px;
+        height: 21px;
+        text-align: center;
+        position: relative;
+        top: 23px;
+      }
+    }
+  .slideshow-container{
+    width: 500px;
+    height: 480px;
+    position: relative;
+
+    .mySlides{
+      width: 100%;
+      height: 100%;
+    }
+
+    .prev, .next{
+      cursor: pointer;
+      position: absolute;
+      top:50%;
+      width: auto;
+      margin-top:-22px;
+      padding: 16px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.6s ease;
+    }
+    .next{
+      right: 0;
+    }
+    .prev:hover , .next:hover{
+      background-color: rgba(0,0,0,0.8);
+    }
+    .fade{
+      -webkit-animation-name:fade;
+      -webkit-animation-duration:1.5s;
+      animation-name:fade;
+      animation-duration:1.5s;
+    }
+    @-webkit-keyframes fade {
+      from{opacity: .4}
+      to{opacity: 1}
+    }
+    @keyframes fade {
+      from{opacity: .4}
+      to{opacity: 1}
+    }
+  }
+
+}
+

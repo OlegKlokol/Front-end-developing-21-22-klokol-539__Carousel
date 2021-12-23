@@ -1,0 +1,35 @@
+// 1em = 16px
+$mobile: 22em; // 352px
+$widemob: 30em; // 480px
+$widestmob: 40em; // 640px
+$tab: 48em; // 768px
+$desk: 61.25em; // 980px
+$mediumdesk: 68.75em; // 1100px
+$widedesk: 80em; // 1280px
+$widestdesk: 87.5em; // 1400px
+
+$mobile_inner: 22em;
+$tab_inner: 48em;
+$desk_inner: 56.25em;
+$widedesk_inner: 80em;
+
+$mobile_padding: ($mobile - $mobile_inner)/2;
+$tab_padding: ($tab - $tab_inner)/2;
+$desk_padding: ($desk - $desk_inner)/2;
+$widedesk_padding: ($widestdesk - $widedesk_inner)/2;
+
+$sidebar_content_width: 320;
+
+$breakpoints_min: ('mobile': (min-width: 0px),
+  'widemob': (min-width: #{$mobile}),
+  'tab': (min-width: #{$tab}),
+  'desk': (min-width: #{$desk}),
+  'widedesk': (min-width: #{$widedesk}),
+);
+
+$breakpoints_max: ('mobile': (max-width: #{$mobile}),
+  'widemob': (max-width: #{$tab}),
+  'tab': (max-width: #{$desk}),
+  'desk': (max-width: #{$widedesk}),
+);
+

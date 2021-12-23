@@ -1,0 +1,36 @@
+.header-wrapper {
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(flex-start);
+
+  padding: 35px 0;
+  margin: 10px 0;
+  border-bottom: 2px solid $dark-grey;
+  height: 50px;
+
+  .logo {
+    width: 30%;
+    background: url("../../images/logo.svg") no-repeat left;
+    padding-left: 55px;
+    line-height: 50px;
+    height: 50px;
+  }
+
+  .main-menu {
+    .menu {
+      @include flexbox;
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      @include justify-content(flex-start);
+
+      list-style: none;
+      line-height: 50px;
+
+      li {
+        padding: 5px 20px 5px 0;
+        line-height: 50px;
+      }
+    }
+  }
+}
